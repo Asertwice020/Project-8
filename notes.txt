@@ -1,0 +1,67 @@
+
+
+
+
+// MOUSE CLICK
+let images = Array.of(back.children);
+
+function sliderImages(arr) {
+    console.log(arr);
+    arr.forEach((item) => {
+        console.log(`hello`);
+        console.log(item);
+    })
+}
+
+
+back.addEventListener('click', sliderImages(images))
+
+
+
+
+
+
+
+
+
+
+
+<img src="Assets8\IMG_7568.JPG" onclick="imgClick5()" alt=""> <!-- 5th -->
+            <img src="Assets8\IMG_7567.JPG" onclick="imgClick4()" alt=""> <!-- 4th -->
+            <img src="Assets8\IMG_7566.JPG" onclick="imgClick3()" alt=""> <!-- 3rd -->
+            <img src="Assets8\IMG_7565.JPG" onclick="imgClick2()" alt=""> <!-- 2nd -->
+            <img src="Assets8\IMG_7564.JPG" onclick="imgClick1()" alt=""> <!-- 1st -->
+
+back.addEventListener('click', function zIndexChanger(img) {
+    let arr = [img5, img4, img3, img2, img1]
+    img.style.display = `none`
+})
+
+zIndexChanger(img5);
+zIndexChanger(img4);
+zIndexChanger(img3);
+zIndexChanger(img2);
+zIndexChanger(img1);
+arr.forEach(function() {
+
+})
+1
+function imgClick1() {
+    img5.style.display = `none`
+}
+// 2
+function imgClick2() {
+    img4.style.display = `none`
+}
+// 3
+function imgClick3() {
+    img3.style.display = `none`
+}
+// 4
+function imgClick4() {
+    img2.style.display = `none`
+}
+// 5
+function imgClick5() {
+    img1.style.display = `none`
+}
